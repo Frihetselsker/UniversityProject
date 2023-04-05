@@ -1,3 +1,7 @@
+package models;
+
+import enums.StudyProfile;
+
 public class University {
     private String id;
     private String fullName;
@@ -5,12 +9,7 @@ public class University {
     private int yearOfFoundation;
     private StudyProfile mainProfile;
 
-    public University(String id, String fullName, String shortName, int yearOfFoundation, StudyProfile mainProfile) {
-        this.id = id;
-        this.fullName = fullName;
-        this.shortName = shortName;
-        this.yearOfFoundation = yearOfFoundation;
-        this.mainProfile = mainProfile;
+    public University() {
     }
 
 
@@ -61,7 +60,7 @@ public class University {
 
     @Override
     public String toString() {
-        return "University{" +
+        return "models.University{" +
                 "id='" + id + '\'' +
                 ", fullName='" + fullName + '\'' +
                 ", shortName='" + shortName + '\'' +

@@ -1,8 +1,11 @@
+package enums;
+
 public enum StudyProfile {
     UNIVERSAL("Универсальный"),
     SECURITY("Безопасность"),
     MEDICINE("Медицина"),
-    TECH("Физтех"),
+    PHYSICS("Физика"),
+    MATHEMATICS("Математика"),
     EDUCATION("Образование"),
     BUSINESS("Бизнес"),
     MANAGEMENT("Менеджмент"),
@@ -11,6 +14,7 @@ public enum StudyProfile {
     CHEMISTRY("Химия"),
     SPORTS("Спорт"),
     NAVAL("Морское направление"),
+    LINGUISTICS("Лингвистика"),
     ECONOMICS("Экономика");
 
     final String profileName;
