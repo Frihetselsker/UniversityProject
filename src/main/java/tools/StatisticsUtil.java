@@ -29,7 +29,7 @@ public class StatisticsUtil {
       List<String> profileUniverstiryID = universityList.stream()
           .filter(university -> university.getMainProfile().equals(profile))
           .map(University::getId)
-          .collect(Collectors.toList());
+          .toList();
       statistics.setUniNumber(profileUniverstiryID.size());
       statistics.setUniNames(StringUtils.EMPTY);
 
@@ -39,7 +39,7 @@ public class StatisticsUtil {
           .forEach(uniFullName -> statistics.setUniNames(statistics.getUniNames() + uniFullName + ";"));
       List<Student> profileStudent = studentList.stream().
           filter(student -> profileUniverstiryID.contains(student.getUniversityId()))
-          .collect(Collectors.toList());
+          .toList();
       statistics.setStudentsNumber(profileStudent.size());
       OptionalDouble avgExamScore = profileStudent.stream()
           .mapToDouble(Student::getAvgExamScore)

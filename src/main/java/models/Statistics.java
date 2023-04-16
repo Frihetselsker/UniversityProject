@@ -1,7 +1,6 @@
 package models;
 
 import enums.StudyProfile;
-import java.util.List;
 
 public class Statistics {
     StudyProfile studyProfile;

@@ -49,6 +49,7 @@ public class Main {
     });
 
     List<Student> studentList = XlsReader.studentsReader(pathIn);
+    studentList.sort(studComparator);
     String studListJson = JsonUtil.studentListToJson(studentList);
     System.out.println(studListJson);
     List<Student> studentListRestored = JsonUtil.jsonToStudentList(studListJson);
