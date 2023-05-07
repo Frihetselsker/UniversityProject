@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3290e4f-cdab-499b-af88-4eb8c3fae4f4" name="Changes" comment="Fourth version of the project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Statistics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tools/StatisticsUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tools/XlsWriter.java" afterDir="false" />
+    <list default="true" id="d3290e4f-cdab-499b-af88-4eb8c3fae4f4" name="Changes" comment="Fifth version of the project">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logging.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/University.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/University.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tools/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/XlsReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tools/XlsReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/XlsReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tools/XlsWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/XlsWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statisticsInfo.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/statisticsInfo.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +71,7 @@
       <workItem from="1680593395654" duration="633000" />
       <workItem from="1680945294230" duration="19000" />
       <workItem from="1681035300462" duration="2000" />
+      <workItem from="1683478506220" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="First version of the project">
       <created>1679477718531</created>
@@ -94,7 +94,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680711660901</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fifth version of the project">
+      <created>1681668485411</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681668485411</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fifth version of the project">
+      <created>1681668578236</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681668578236</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +118,7 @@
     <MESSAGE value="First version of the project" />
     <MESSAGE value="Third version of the project" />
     <MESSAGE value="Fourth version of the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fourth version of the project" />
+    <MESSAGE value="Fifth version of the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fifth version of the project" />
   </component>
 </project>

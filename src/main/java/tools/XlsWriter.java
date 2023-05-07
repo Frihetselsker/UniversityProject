@@ -3,6 +3,8 @@ package tools;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import models.Statistics;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
@@ -13,7 +15,11 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class XlsWriter {
 
-    public static void statisticsWrite(List<Statistics> statisticsList, String fileName) throws IOException {
+    private final static Logger logger = Logger.getLogger(XlsWriter.class.getName());
+
+    public static void statisticsWrite(List<Statistics> statisticsList, String fileName) {
+        logger.log(Level.INFO, "Writing new Excel file started");
+
         XSSFWorkbook workbook = new XSSFWorkbook();
         XSSFSheet sheet = workbook.getSheet(workbook.createSheet("Статистика").getSheetName());
         XSSFRow row = sheet.createRow(0);
@@ -72,9 +78,15 @@ public class XlsWriter {
         }
 
 
-        FileOutputStream file = new FileOutputStream(fileName);
-        workbook.write(file);
-        file.close();
-        System.out.println("Запись проведена успешно!");
+        try {
+            FileOutputStream file = new FileOutputStream(fileName);
+            workbook.write(file);
+            file.close();
+        } catch (IOException e){
+            logger.log(Level.SEVERE, "Writing new Excel file failed", e);
+            return;
+        }
+
+        logger.log(Level.INFO, "Writing new Excel file executed correctly");
     }
 }
