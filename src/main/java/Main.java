@@ -5,14 +5,16 @@ import comparators.students.StudentComparator;
 import comparators.universities.UniversityComparator;
 import enums.StudentsComparators;
 import enums.UniversityComparators;
+
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
+
+import models.FullInfo;
 import models.Student;
 import models.University;
-import tools.ComparatorUtil;
-import tools.XlsReader;
-import tools.JsonUtil;
+import tools.*;
 
 import java.io.IOException;
 import java.util.List;
@@ -48,6 +50,15 @@ public class Main {
 
 
     statisticsWrite(createStatistics(studentList, universityList), pathOut);
+
+    FullInfo fullInfo = new FullInfo()
+            .setStudentList(studentList)
+            .setUniversityList(universityList)
+            .setStatisticsList(createStatistics(studentList, universityList))
+            .setDate(new Date());
+
+    XmlWriter.createXMLRequest(fullInfo);
+    JsonWriter.createJsonRequest(fullInfo);
 
     logger.log(Level.INFO, "Application has ended correctly");
 
